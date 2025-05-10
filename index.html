@@ -30,7 +30,7 @@
 
       try {
         const apiKey = 'b48070932af349e08ea185230250505';
-        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`);
+        const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`);
         const data = await response.json();
 
         if (data.error) {
